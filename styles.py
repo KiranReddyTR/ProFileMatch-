@@ -74,7 +74,7 @@ def apply_custom_styles():
     .page-title {
         font-size: 2.5rem;
         font-weight: 600;
-        color: #C0C0C0;
+        color: #ffffff;
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -125,14 +125,15 @@ def apply_custom_styles():
     .stTextInput > div > div > input,
     .stTextArea > div > div > textarea,
     .stSelectbox > div > div > select {
-        background: rgba(44, 62, 80, 0.8);
+        background: rgba(44, 62, 80, 0.9);
         backdrop-filter: blur(10px);
-        border: 2px solid #2c3e50;
+        border: 2px solid #3498db;
         border-radius: 12px;
-        color: #ecf0f1;
+        color: #ffffff;
         font-family: 'Inter', sans-serif;
         padding: 0.8rem 1rem;
         font-size: 1rem;
+        font-weight: 500;
     }
     
     .stTextInput > div > div > input:focus,
@@ -156,16 +157,31 @@ def apply_custom_styles():
     
     /* File uploader styling */
     .stFileUploader > div {
-        background-color: #2D2D2D;
-        border: 2px dashed #C0C0C0;
-        border-radius: 8px;
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        border: 2px dashed #3498db;
+        border-radius: 15px;
         padding: 2rem;
         text-align: center;
+        transition: all 0.3s ease;
     }
     
     .stFileUploader > div:hover {
-        border-color: #D0D0D0;
-        background-color: #353535;
+        border-color: #5dade2;
+        background: linear-gradient(135deg, #34495e, #2c3e50);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+    }
+    
+    /* File uploader text */
+    .stFileUploader label {
+        color: #ffffff !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+    }
+    
+    .stFileUploader small {
+        color: #e8e8e8 !important;
+        font-weight: 500 !important;
     }
     
     /* Tab styling */
@@ -177,7 +193,7 @@ def apply_custom_styles():
     }
     
     .stTabs > div > div > div > div > div {
-        color: #ecf0f1;
+        color: #ffffff;
         font-weight: 600;
         font-size: 1.1rem;
     }
@@ -207,21 +223,6 @@ def apply_custom_styles():
         box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
     }
     
-    /* File Upload Container */
-    .stFileUploader > div {
-        background: linear-gradient(135deg, #2c3e50, #34495e);
-        border: 2px dashed #3498db;
-        border-radius: 15px;
-        padding: 2rem;
-        transition: all 0.3s ease;
-    }
-    
-    .stFileUploader > div:hover {
-        border-color: #5dade2;
-        background: linear-gradient(135deg, #34495e, #2c3e50);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
-    }
     
     /* Progress Bar Styling */
     .progress-container {
