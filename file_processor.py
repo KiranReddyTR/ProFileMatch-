@@ -89,8 +89,8 @@ def show_upload_page():
     # Enhanced file upload section with animations
     st.markdown("""
         <div style="text-align: center; margin: 2rem 0;">
-            <h2 style="color: #ecf0f1; font-size: 2.5rem; margin-bottom: 1rem;">📂 Upload Your Documents</h2>
-            <p style="color: #bdc3c7; font-size: 1.1rem;">Drag and drop your files or click to browse</p>
+            <h2 style="color: #ffffff; font-size: 2.5rem; margin-bottom: 1rem;">📂 Upload Your Documents</h2>
+            <p style="color: #e8e8e8; font-size: 1.1rem; font-weight: 500;">Drag and drop your files or click to browse</p>
         </div>
     """, unsafe_allow_html=True)
     
@@ -99,8 +99,8 @@ def show_upload_page():
     with col1:
         st.markdown("""
             <div class="upload-zone" style="text-align: center; margin-bottom: 1rem;">
-                <h4 style="color: #3498db; font-size: 1.4rem;">📝 Resume</h4>
-                <p style="color: #bdc3c7; font-size: 0.9rem;">PDF, TXT, DOCX formats</p>
+                <h4 style="color: #3498db; font-size: 1.4rem; font-weight: 600;">📝 Resume</h4>
+                <p style="color: #ffffff; font-size: 1rem; font-weight: 500;">PDF, TXT, DOCX formats</p>
             </div>
         """, unsafe_allow_html=True)
         
@@ -127,8 +127,8 @@ def show_upload_page():
     with col2:
         st.markdown("""
             <div class="upload-zone" style="text-align: center; margin-bottom: 1rem;">
-                <h4 style="color: #e74c3c; font-size: 1.4rem;">💼 Job Description</h4>
-                <p style="color: #bdc3c7; font-size: 0.9rem;">PDF, TXT, DOCX formats</p>
+                <h4 style="color: #e74c3c; font-size: 1.4rem; font-weight: 600;">💼 Job Description</h4>
+                <p style="color: #ffffff; font-size: 1rem; font-weight: 500;">PDF, TXT, DOCX formats</p>
             </div>
         """, unsafe_allow_html=True)
         
@@ -151,15 +151,15 @@ def show_upload_page():
     st.markdown("---")
     st.markdown("""
         <div style="text-align: center; margin: 2rem 0;">
-            <h3 style="color: #ecf0f1; font-size: 2rem;">✍️ Or Enter Text Directly</h3>
-            <p style="color: #bdc3c7;">Copy and paste your content below</p>
+            <h3 style="color: #ffffff; font-size: 2rem; font-weight: 600;">✍️ Or Enter Text Directly</h3>
+            <p style="color: #e8e8e8; font-size: 1.1rem; font-weight: 500;">Copy and paste your content below</p>
         </div>
     """, unsafe_allow_html=True)
     
     col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("#### 📝 Resume Text")
+        st.markdown("#### <span style='color: #ffffff; font-weight: 600;'>📝 Resume Text</span>", unsafe_allow_html=True)
         resume_text = st.text_area(
             "Paste your resume text here",
             height=200,
@@ -169,7 +169,7 @@ def show_upload_page():
         )
     
     with col2:
-        st.markdown("#### 💼 Job Description Text")
+        st.markdown("#### <span style='color: #ffffff; font-weight: 600;'>💼 Job Description Text</span>", unsafe_allow_html=True)
         
         # Show job templates
         template_content = show_job_templates()
@@ -228,7 +228,7 @@ def show_upload_page():
             with progress_container.container():
                 st.markdown("""
                     <div class="progress-container">
-                        <h4 style="color: #ecf0f1; text-align: center; margin-bottom: 1rem;">🔍 Processing Your Files...</h4>
+                        <h4 style="color: #ffffff; text-align: center; margin-bottom: 1rem; font-weight: 600;">🔍 Processing Your Files...</h4>
                     </div>
                 """, unsafe_allow_html=True)
                 
