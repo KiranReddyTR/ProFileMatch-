@@ -267,7 +267,7 @@ def show_results_page():
                                 st.markdown(f"""
                                     <div style="background: linear-gradient(135deg, #2c3e50, #34495e); padding: 1.2rem; border-radius: 15px; margin-bottom: 1rem; border: 1px solid #3498db; box-shadow: 0 8px 25px rgba(15, 52, 96, 0.6);">
                                         <img src="{video['thumbnail']}" style="width: 100%; border-radius: 8px; margin-bottom: 0.8rem;">
-                                        <h4 style="color: #ecf0f1; font-size: 0.95rem; margin-bottom: 0.8rem; font-weight: 600;">{video['title'][:45]}...</h4>
+                                        <h4 style="color: #ffffff; font-size: 0.95rem; margin-bottom: 0.8rem; font-weight: 600;">{video['title'][:45]}...</h4>
                                         <a href="{video['url']}" target="_blank" style="text-decoration: none;">
                                             <button style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; width: 100%; font-weight: 600; transition: all 0.3s ease;">
                                                 🎥 Watch Now
@@ -284,7 +284,7 @@ def show_results_page():
                                 st.markdown(f"""
                                     <div style="background: linear-gradient(135deg, #34495e, #2c3e50); padding: 1.2rem; border-radius: 15px; margin-bottom: 1rem; border: 1px solid #3498db; box-shadow: 0 8px 25px rgba(15, 52, 96, 0.6);">
                                         <img src="{video['thumbnail']}" style="width: 100%; border-radius: 8px; margin-bottom: 0.8rem;">
-                                        <h4 style="color: #ecf0f1; font-size: 0.95rem; margin-bottom: 0.8rem; font-weight: 600;">{video['title'][:45]}...</h4>
+                                        <h4 style="color: #ffffff; font-size: 0.95rem; margin-bottom: 0.8rem; font-weight: 600;">{video['title'][:45]}...</h4>
                                         <a href="{video['url']}" target="_blank" style="text-decoration: none;">
                                             <button style="background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; border: none; padding: 0.6rem 1.2rem; border-radius: 8px; cursor: pointer; width: 100%; font-weight: 600; transition: all 0.3s ease;">
                                                 🎥 Watch Now
