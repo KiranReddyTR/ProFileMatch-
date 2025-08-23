@@ -125,9 +125,9 @@ def show_saved_results_page():
     if not saved_analyses:
         st.markdown("""
             <div style="text-align: center; padding: 3rem; background: #2D2D2D; border-radius: 10px; margin: 2rem 0;">
-                <h3 style="color: #C0C0C0;">📭 No Saved Results</h3>
-                <p style="color: #A0A0A0;">You haven't saved any analysis results yet.</p>
-                <p style="color: #A0A0A0;">Complete an analysis and save it to see your results here.</p>
+                <h3 style="color: #ffffff; font-weight: 600;">📭 No Saved Results</h3>
+                <p style="color: #e8e8e8; font-weight: 500;">You haven't saved any analysis results yet.</p>
+                <p style="color: #e8e8e8; font-weight: 500;">Complete an analysis and save it to see your results here.</p>
             </div>
         """, unsafe_allow_html=True)
         
@@ -170,7 +170,7 @@ def show_saved_results_page():
                 st.markdown(f"""
                     <div style="text-align: center; background: #2D2D2D; padding: 1rem; border-radius: 8px;">
                         <h3 style="color: {score_color}; margin: 0;">{ats_score}%</h3>
-                        <p style="color: #C0C0C0; margin: 0;">ATS Score</p>
+                        <p style="color: #ffffff; margin: 0; font-weight: 500;">ATS Score</p>
                     </div>
                 """, unsafe_allow_html=True)
             
@@ -179,7 +179,7 @@ def show_saved_results_page():
                 st.markdown(f"""
                     <div style="text-align: center; background: #2D2D2D; padding: 1rem; border-radius: 8px;">
                         <h3 style="color: #4CAF50; margin: 0;">{matched_count}</h3>
-                        <p style="color: #C0C0C0; margin: 0;">Matched Skills</p>
+                        <p style="color: #ffffff; margin: 0; font-weight: 500;">Matched Skills</p>
                     </div>
                 """, unsafe_allow_html=True)
             
@@ -188,7 +188,7 @@ def show_saved_results_page():
                 st.markdown(f"""
                     <div style="text-align: center; background: #2D2D2D; padding: 1rem; border-radius: 8px;">
                         <h3 style="color: #FF5722; margin: 0;">{missing_count}</h3>
-                        <p style="color: #C0C0C0; margin: 0;">Missing Skills</p>
+                        <p style="color: #ffffff; margin: 0; font-weight: 500;">Missing Skills</p>
                     </div>
                 """, unsafe_allow_html=True)
             
